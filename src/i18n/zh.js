@@ -1,0 +1,125 @@
+export default {
+  // 导航
+  nav: {
+    practice: '练习',
+    reference: '命令手册',
+    wrongBook: '错题本',
+    community: '自定义导入'
+  },
+  // 应用标题
+  app: {
+    title: 'Linux命令学习系统'
+  },
+  // 练习页
+  practice: {
+    submitAnswer: '提交答案',
+    nextQuestion: '下一题',
+    retryQuestion: '重新答题',
+    allCategories: '全部分类',
+    allDifficulties: '全部难度',
+    questionNo: '第{n}题',
+    enterSubmit: 'Enter 提交',
+    totalQuestions: '总题数',
+    correctCount: '正确数',
+    accuracyRate: '正确率',
+    loadFailed: '加载题目失败',
+    retry: '重试',
+    noQuestions: '没有可用的题目，请尝试调整筛选条件',
+    pleaseAnswer: '请先输入答案',
+    correct: '回答正确！',
+    wrong: '回答错误，请查看正确答案',
+    loadError: '加载题目失败，请刷新页面重试',
+    selectCategory: '选择分类',
+    selectDifficulty: '选择难度'
+  },
+  // 命令手册页
+  reference: {
+    title: '命令速查手册',
+    subtitle: 'Linux 常用命令快速查阅，点击「去练习」即可针对性训练',
+    searchPlaceholder: '搜索命令名称或描述...',
+    all: '全部',
+    questionCount: '共{n}道练习题',
+    goPractice: '去练习',
+    noMatch: '没有找到匹配的命令',
+    loadDataFailed: '加载数据失败'
+  },
+  // 错题本
+  wrongBook: {
+    title: '错题本',
+    totalCount: '共{n}题',
+    clearAll: '清空错题本',
+    retryAll: '重新练习错题',
+    empty: '还没有错题，继续保持！',
+    remove: '移除',
+    yourAnswer: '你的答案：',
+    correctAnswer: '正确答案：',
+    noAnswer: '未作答',
+    copy: '复制',
+    explanation: '解析：',
+    commandInfo: '命令说明：',
+    command: '命令：',
+    description: '描述：',
+    usage: '用法：',
+    unknownTime: '未知时间',
+    submitAnswer: '提交答案',
+    removeAndContinue: '移除并继续',
+    nextQuestion: '下一题',
+    backToWrongBook: '返回错题本',
+    finishPractice: '完成练习',
+    exitPractice: '退出练习',
+    noWrongToPractice: '没有错题可以练习',
+    confirmClear: '确定要清空所有错题吗？此操作不可恢复。',
+    confirmClearTitle: '清空错题本',
+    confirmClearBtn: '确定清空',
+    cancelBtn: '取消',
+    cleared: '错题本已清空',
+    removed: '已从错题本移除',
+    pleaseAnswer: '请先输入答案',
+    correct: '回答正确！',
+    wrong: '回答错误，请查看正确答案',
+    loadFailed: '加载错题失败',
+    copied: '已复制到剪贴板',
+    copyFailed: '复制失败，请手动复制'
+  },
+  // 自定义导入
+  import: {
+    title: '自定义导入',
+    importQuestions: '导入题目',
+    viewExample: '查看示例',
+    clear: '清空',
+    importBtn: '导入',
+    importSuccess: '导入成功',
+    importFailed: '导入失败',
+    clearConfirm: '确定要清空所有导入的题目吗？',
+    cleared: '已清空'
+  },
+  // 通用
+  common: {
+    choice: '选择题',
+    fill: '填空题',
+    beginner: '初级',
+    intermediate: '中级',
+    advanced: '高级',
+    explanation: '解析',
+    yourAnswer: '你的答案',
+    correctAnswer: '正确答案',
+    commandInfo: '命令说明',
+    copy: '复制',
+    copied: '已复制到剪贴板',
+    copyFailed: '复制失败，请手动复制',
+    noAnswer: '未作答',
+    command: '命令：',
+    description: '描述：',
+    usage: '用法：',
+    optionsLoadFailed: '选项数据加载失败，请刷新页面重试',
+    fillPlaceholder: '请输入命令（按 Enter 提交）',
+    fileOps: '文件操作',
+    systemAdmin: '系统管理',
+    networkOps: '网络操作',
+    textProcess: '文本处理',
+    compressArchive: '压缩归档',
+    userPermission: '用户与权限',
+    pipeRedirect: '管道与重定向',
+    processService: '进程与服务'
+  }
+}
