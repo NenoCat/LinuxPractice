@@ -89,50 +89,6 @@ npm run dev
 npm run build
 ```
 
-构建产物位于 `dist/` 目录，可直接部署到任意静态托管服务。
-
-## 项目结构
-
-```
-LinuxPractice/
-├── index.html                  # 入口 HTML
-├── package.json                # 项目配置
-├── vite.config.js              # Vite 构建配置
-├── src/
-│   ├── main.js                 # Vue 应用入口
-│   ├── App.vue                 # 根组件
-│   ├── router/
-│   │   └── index.js            # 路由配置
-│   ├── database/
-│   │   └── init.js             # 数据库初始化（建表 + 题目数据）
-│   ├── components/
-│   │   ├── QuestionCard.vue    # 题目卡片（根据题型分发）
-│   │   ├── ChoiceQuestion.vue  # 选择题组件
-│   │   ├── FillQuestion.vue    # 填空题组件
-│   │   └── ResultPanel.vue     # 结果解析面板
-│   ├── views/
-│   │   ├── PracticeView.vue    # 练习主页面
-│   │   ├── ReferenceView.vue   # 命令手册
-│   │   ├── CommandDetailView.vue # 命令详情
-│   │   ├── WrongBookView.vue   # 错题本
-│   │   └── ImportView.vue      # 自定义导入
-│   ├── i18n/
-│   │   └── zh.js               # 中文文案
-│   └── utils/
-│       └── db.js               # 数据库操作（初始化/出题/判卷/查命令）
-├── assets/                     # 截图资源
-└── .gitignore
-```
-
-## 技术栈
-
-| 技术 | 用途 |
-|------|------|
-| [Vue 3](https://vuejs.org/) | 前端框架（Composition API + `<script setup>`） |
-| [Element Plus](https://element-plus.org/) | UI 组件库 |
-| [sql.js](https://sql.js.org/) | 浏览器端 SQLite 数据库 |
-| [Vite](https://vitejs.dev/) | 构建工具 |
-
 ## 使用说明
 
 1. **练习**：打开网站后系统自动加载一道随机题目，选择题点选选项，填空题输入命令，点击「提交答案」或按 `Enter` 键提交，查看结果与解析后继续下一题。
@@ -140,32 +96,3 @@ LinuxPractice/
 3. **命令详情**：查看命令的用法、描述以及所有相关练习题和正确答案。
 4. **错题本**：自动收集练习中答错的题目，支持重新练习和移除已掌握的题目。
 5. **自定义导入**：按指定 JSON 格式导入自定义命令和题目，扩展个人题库。
-
-## 参与贡献
-
-欢迎提交 Issue 和 Pull Request！
-
-**贡献方向：**
-
-- 补充更多命令和题目（编辑 `src/database/init.js`）
-- 修复 Bug 或改进用户体验
-- 优化答题逻辑和判卷算法
-- 添加新功能
-
-### 添加题目示例
-
-在 `src/database/init.js` 中按以下格式添加：
-
-```sql
--- 选择题
-INSERT INTO questions (type, command_id, question_text, options, correct_answer, explanation) VALUES
-('choice', 1, '你的题目？', '["选项A", "选项B", "选项C", "选项D"]', '正确答案', '解析说明');
-
--- 填空题
-INSERT INTO questions (type, command_id, question_text, options, correct_answer, explanation) VALUES
-('fill', 1, '要实现xxx，命令是：___', NULL, '正确命令', '解析说明');
-```
-
-## 许可证
-
-[MIT](LICENSE)
